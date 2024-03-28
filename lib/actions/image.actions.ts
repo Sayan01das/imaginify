@@ -24,7 +24,7 @@ export async function addImage({ image, userId, path }: AddImageParams) {
 
     if (!author) {
       throw new Error("User not found");
-    } 
+    }
 
     const newImage = await Image.create({
       ...image,
